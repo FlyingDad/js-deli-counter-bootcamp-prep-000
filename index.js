@@ -20,9 +20,11 @@ function currentLine(line){
   } else {
     var text = "The line is currently: ";
     for(var i = 0; i < line.length; i++){
-      text += i + ". " + line[i] + ", ";
+      text += i + ". " + line[i];
+      if(i < line.length - 1){
+        text += ", ";
+      }
     }
-    text.splice(-2, 2);
     return text;
   }
 }
