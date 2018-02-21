@@ -22,6 +22,7 @@ function currentLine(line){
     for(var i = 0; i < line.length; i++){
       text += i + ". " + line[i] + ", ";
     }
+    text.splice(-2, 2);
     return text;
   }
 }
